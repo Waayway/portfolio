@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Svelte",
+        "icon": "vscode-icons:file-type-svelte"
+    },
+    {
+        "name": "Django",
+        "icon": "vscode-icons:file-type-django"
+    },
+    {
+        "name": "Javascript",
+        "icon": "vscode-icons:file-type-js-official"
+    },
+    {
+        "name": "Typescript",
+        "icon": "vscode-icons:file-type-typescript-official"
+    },
+    {
+        "name": "Rust",
+        "icon": "vscode-icons:file-type-rust"
+    },
+    {
+        "name": "PHP",
+        "icon": "vscode-icons:file-type-php"
+    },
+    {
+        "name": "Python",
+        "icon": "vscode-icons:file-type-python"
+    },
+    {
+        "name": "Nix",
+        "icon": "vscode-icons:file-type-nix"
+    },
+    {
+        "name": "C++",
+        "icon": "vscode-icons:file-type-cpp3"
+    },
+    {
+        "name": "C#",
+        "icon": "vscode-icons:file-type-csharp2"
+    },
+    {
+        "name": "HTML",
+        "icon": "vscode-icons:file-type-html"
+    },
+    {
+        "name": "CSS",
+        "icon": "vscode-icons:file-type-css"
+    },
+    {
+        "name": "SCSS",
+        "icon": "vscode-icons:file-type-sass"
+    },
+    {
+        "name": "Tailwind",
+        "icon": "vscode-icons:file-type-tailwind"
+    },
+    {
+        "name": "Docker",
+        "icon": "vscode-icons:file-type-docker"
+    }
+]

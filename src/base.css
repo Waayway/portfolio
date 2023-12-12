@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-size: 18px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a, li {
+    @apply text-text;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    @apply text-3xl;
+}
+h2 {
+    @apply text-2xl;
+}
+h3 {
+    @apply text-xl;
+}
+h4 {
+    @apply text-lg;
+}
+h5 {
+    @apply text-base;
+}
+h6 {
+    @apply text-sm;
+}

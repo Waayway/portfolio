@@ -1,0 +1,45 @@
+---
+import { getEntry } from "astro:content";
+
+import { Icon } from "astro-icon";
+import { getCollection } from "astro:content";
+
+const knowledge = await getEntry("knowledge", "knowledge");
+
+const projects = await getCollection("projects");
+---
+
+<section class="h-full flex-grow flex flex-col-reverse md:grid grid-flow-col">
+    <aside class="lg:w-96 bg-mantle flex-grow p-8 flex gap-2 flex-col">
+        <h2>IT Knowledge</h2>
+            {
+                knowledge.data.map((know) => (
+                    <div class="flex gap-2">
+                        <div class="w-8 h-8">
+                            <Icon name={know.icon} />
+                        </div>
+                        <h3>{know.name}</h3>
+                    </div>
+                ))
+            }
+    </aside>
+    <div class="px-8 flex-shrink lg:py-0 py-8 flex flex-col gap-8">
+        <div>
+            <h1>Personal summary</h1>
+            <p>
+                I am a curious man and a real go-getter. I am goal-oriented and
+                friendly, although I don't like to take the forefront. I enjoy
+                working independently, but I can also find my way in a team."
+            </p>
+        </div>
+        <div>
+            <h1>Projects</h1>
+            {projects.map((project) => (
+                <div class="flex flex-col gap-2 pt-4">
+                    <h3>{project.data.title}</h3>
+                    <p>{project.data.sampleText} <a href={project.data.url} class="underline text-mauve">{project.data.url.replace("https://", "")}</a></p>
+                </div>
+            ))}
+        </div>
+    </div>
+</section>

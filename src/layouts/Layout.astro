@@ -1,0 +1,25 @@
+---
+interface Props {
+	title?: string;
+}
+
+import "@/base.css"
+import '@fontsource/source-sans-pro';
+import '@fontsource-variable/raleway';
+
+const title = Astro.props.title ?? "Thijs van Waaij";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body class="bg-base min-h-screen flex flex-col">
+		<slot />
+	</body>
+</html>
