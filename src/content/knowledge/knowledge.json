@@ -8,11 +8,11 @@
         "icon": "vscode-icons:file-type-django"
     },
     {
-        "name": "Javascript",
+        "name": "JavaScript",
         "icon": "vscode-icons:file-type-js-official"
     },
     {
-        "name": "Typescript",
+        "name": "TypeScript",
         "icon": "vscode-icons:file-type-typescript-official"
     },
     {
@@ -52,7 +52,7 @@
         "icon": "vscode-icons:file-type-sass"
     },
     {
-        "name": "Tailwind",
+        "name": "Tailwind CSS",
         "icon": "vscode-icons:file-type-tailwind"
     },
     {
